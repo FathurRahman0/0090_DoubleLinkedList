@@ -124,6 +124,15 @@ public:
                 cout << "record with roll number " << rollNo << "deleted" << endl;
         }
 
+        void traverse()
+    {
+        if (START == NULL)
+        {
+            cout << "\nlist is empty" << endl;
+            return;
+        }
+
+
 
 
     }
