@@ -124,7 +124,7 @@ public:
                 cout << "record with roll number " << rollNo << "deleted" << endl;
         }
 
-        void traverse()
+    void traverse()
     {
         if (START == NULL)
         {
@@ -132,10 +132,19 @@ public:
             return;
         }
 
+        // Step 1: Mark first node as currentNode
+        Node *currentNode = START;
+        
+        // Step 2: Repeat untill currentNode == NULL
+        cout << "\nRecords in ascending order of roll number are:\n";
+        int i = 0;
+        while (currentNode != NULL)
+        {
+
+                cout << i + 1 << "." << currentNode->noMhs << " " << endl;
 
 
-
-    }
+         }
 
 
 
