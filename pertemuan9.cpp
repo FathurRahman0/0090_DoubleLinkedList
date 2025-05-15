@@ -71,7 +71,14 @@ public:
         // Step 9 : insert between current and current->next
         newNode->next =  current->next; // Step 9a : newNode.Next
         newNode->prev = current;        // Step 9b : newNode.prev
-        }
-    }    
+
+        // insert lost node
+        if (current->next != NULL)
+            current->next->prev = newNode; // step 9c: current->next.prev = newnode
+
+        current->next = newNode; // step 9d: current.next = newnode
+    }
+
+       
 
 }
